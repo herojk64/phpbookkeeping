@@ -45,7 +45,6 @@ CREATE TABLE `books` (
 
 LOCK TABLES `books` WRITE;
 /*!40000 ALTER TABLE `books` DISABLE KEYS */;
-INSERT INTO `books` VALUES (2,'asj','kladsjklasjdasjd','kasjdsklj','229154286_1185466945305600_7224596521328430898_n.jpg','Book Keeping.pdf','2023-09-24 21:17:29','2023-09-24 21:17:29'),(3,'jkjdfkljdsflkjsfklsjdkfsj','llksjdklfjdslfkjl','fjsdfjdslfj','275004830_133931782520369_371019227599684193_n.jpg','ProjectReport.docx-1-1 (2).pdf','2023-09-25 23:00:07','2023-09-25 23:00:07'),(4,'sdafhdsfh','kjdhskjdhkj','kjfhskhskahdkj','1182201-1366x768-[DesktopNexus.com].jpg','ProjectReport.docx-1-1 (2).pdf','2023-09-25 23:00:26','2023-09-25 23:00:26'),(5,'dfsdfdsf','sdfasdfasdfasdfad','dsfsdfdsfdsf','275004830_133931782520369_371019227599684193_n.jpg','Book-Keeping.pdf','2023-09-25 23:49:41','2023-09-25 23:49:41');
 /*!40000 ALTER TABLE `books` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,7 +77,22 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Amit Dhakal','herojk64@gmail.com','herojk64','$2y$10$sjwnAXKmooaDOYurNt6zgOppWf6RSB/.IQbjDzsSjN9CjEcICByF2','9801109082',0),(2,'admin','admin@gmail.com','admin','$2y$10$jG5QQ/5ceDIBJjMN2qCbsOBDZjIbKYG4KC6y9iHwAA5GpJiQfUqGu','9841339246',1);
+INSERT INTO `bookkeeping`.`users`
+(
+`name`,
+`email`,
+`username`,
+`password`,
+`phno`,
+`admin`)
+VALUES
+(
+'admin',
+'admin@admin.com',
+'admin',
+'$2y$10$/gD3zXrmoUMDF8zmKpy2V.lnFO8xgUOezYRxciVsaVgvUl45Ar4.G',
+'1235465789',
+1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -99,4 +113,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-26  2:40:53
+-- Dump completed on 2023-09-26  2:49:56
